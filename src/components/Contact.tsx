@@ -50,7 +50,7 @@ const Contact = () => {
 
           <Card className="glass-card border-accent/30 float-animation" style={{ animationDelay: '1s' }}>
             <CardContent className="p-8">
-              <h3 className="text-2xl font-semibold mb-4 text-accent">Availability</h3>
+              <h3 className="text-2xl font-semibold mb-4 text-primary">Availability</h3>
               <p className="text-muted-foreground leading-relaxed">
                 Currently available for freelance projects and full-time opportunities.
                 <br></br>
