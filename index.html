@@ -1,13 +1,339 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio - Sahil.shah</title>
-  </head>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Sahil Shah | Backend Developer</title>
+<meta name="description" content="Sahil Shah — Backend Developer. Building products that provide value." />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
 
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<!-- ===================== Navigation ===================== -->
+<nav class="nav" id="nav">
+  <div class="container">
+    <div class="nav-inner">
+      <h1 class="nav-logo text-moonlight text-glow">Sahil.shah</h1>
+
+      <div class="nav-links">
+        <a href="#about">about</a>
+        <a href="#skills">skills</a>
+        <a href="#projects">projects</a>
+        <a href="#contact">contact</a>
+      </div>
+
+      <a class="btn btn-outline-primary" href="#contact">Get In Touch</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===================== Hero ===================== -->
+<section class="hero">
+  <div class="hero-bg" style="background-image: url('asset/hero-beach.jpg');"></div>
+
+  <!-- Floating Elements -->
+  <div class="hero-dot float-dot" style="top:5rem; left:2.5rem; width:0.5rem; height:0.5rem; background:hsl(var(--wave-foam)); opacity:0.7;"></div>
+  <div class="hero-dot float-dot" style="top:12.5rem; left:2.5rem; width:0.5rem; height:0.5rem; background:hsl(var(--primary)); opacity:0.7;"></div>
+  <div class="hero-dot float-dot" style="top:20rem; right:5rem; width:0.375rem; height:0.375rem; background:hsl(var(--primary)); opacity:0.7;"></div>
+  <div class="hero-dot float-dot" style="bottom:8rem; right:25%; width:0.375rem; height:0.375rem; background:hsl(var(--wave-foam)); opacity:0.6;"></div>
+  <div class="hero-dot float-dot" style="top:10rem; right:5rem; width:0.25rem; height:0.25rem; background:hsl(var(--wave-foam)); opacity:0.5; animation-delay:2s;"></div>
+  <div class="hero-dot float-dot" style="bottom:8rem; left:25%; width:0.375rem; height:0.375rem; background:hsl(var(--primary)); opacity:0.6; animation-delay:4s;"></div>
+
+  <div class="hero-content">
+    <div class="fade-in-up">
+      <h1 class="hero-title text-moonlight text-glow">
+        Hello, This Is Sahil Shah
+        <span>Backend Developer</span>
+      </h1>
+
+      <p class="hero-subtitle">Building Products That Provides Value.</p>
+
+      <div class="hero-actions">
+        <button class="btn btn-lg btn-primary glass-card" data-scroll="projects">View My Work</button>
+        <button class="btn btn-lg btn-outline-moonlight glass-card" data-scroll="about">About Me</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== About ===================== -->
+<section id="about" class="section">
+  <div class="container max-w-6xl">
+    <div class="section-header">
+      <h2 class="text-moonlight text-glow">About Me</h2>
+      <p>Passionate about clean code, modern design, and real-world impact.</p>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-col">
+        <div class="card glass-card about-card-border-primary float-animation">
+          <div class="card-content p-8">
+            <h3 class="text-primary" style="font-size:1.5rem; font-weight:600; margin:0 0 1rem;">My Journey</h3>
+            <p class="text-muted" style="margin:0; line-height:1.6;">
+                Backend Developer obsessed with performance and scalability. Reduced a critical system's load time from 40s to 3s, while building secure Laravel APIs, authentication systems, and production-ready applications that scale.
+            </p>  
+          </div>
+        </div>
+
+        <div class="card glass-card about-card-border-accent float-animation" style="animation-delay:1s;">
+          <div class="card-content p-8">
+            <h3 class="text-primary" style="font-size:1.5rem; font-weight:600; margin:0 0 1rem;">Philosophy</h3>
+            <p class="text-muted" style="margin:0; line-height:1.6;">
+              Every project is like building a lighthouse – it should be both functional and inspiring, guiding users through their digital journey with clarity and elegance.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-col">
+        <div class="card glass-card about-card-border-moonlight p-8">
+          <h3 class="text-primary" style="font-size:1.5rem; font-weight:600; margin:0 0 1rem;">What I Do</h3>
+          <div class="about-list">
+            <div class="about-list-item"><div class="about-dot"></div><span>Frontend Development</span></div>
+            <div class="about-list-item"><div class="about-dot"></div><span>Backend Development</span></div>
+            <div class="about-list-item"><div class="about-dot"></div><span>API Design &amp; Integration</span></div>
+            <div class="about-list-item"><div class="about-dot"></div><span>Performance Optimization</span></div>
+          </div>
+        </div>
+
+        <p class="about-quote">&ldquo;Code is poetry written in logic&rdquo;</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== Skills ===================== -->
+<section id="skills" class="section ocean-gradient">
+  <div class="container max-w-6xl">
+    <div class="section-header">
+      <h2 class="text-moonlight text-glow">Skills &amp; Expertise</h2>
+      <p>Technologies I've mastered while navigating the digital landscape</p>
+    </div>
+
+    <div class="skills-grid">
+      <div class="card glass-card skill-card">
+        <div class="card-content p-8">
+          <div class="skill-icon wave-animation">🖼️</div>
+          <h3>Frontend</h3>
+          <div class="skill-badges">
+            <span class="badge badge-primary">React</span>
+            <span class="badge badge-primary">Bootstrap</span>
+            <span class="badge badge-primary">JS</span>
+            <span class="badge badge-primary">CSS</span>
+            <span class="badge badge-primary">HTML</span>
+            <span class="badge badge-primary">Jquey</span>
+            <span class="badge badge-primary">Ajax</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card glass-card skill-card">
+        <div class="card-content p-8">
+          <div class="skill-icon wave-animation" style="animation-delay:1s;">⚙️</div>
+          <h3>Backend</h3>
+          <div class="skill-badges">
+            <span class="badge badge-accent">Node.js</span>
+            <span class="badge badge-accent">Mysql</span>
+            <span class="badge badge-accent">Laravel</span>
+            <span class="badge badge-accent">PHP</span>
+            <span class="badge badge-accent">Express</span>
+            <span class="badge badge-accent">REST Api</span>
+            <span class="badge badge-accent">Adonis js</span>
+            <span class="badge badge-accent">Job/Queue</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card glass-card skill-card">
+        <div class="card-content p-8">
+          <div class="skill-icon wave-animation" style="animation-delay:2s;">🚀</div>
+          <h3>Tools &amp; Cloud</h3>
+          <div class="skill-badges">
+            <span class="badge badge-secondary">Git</span>
+            <span class="badge badge-secondary">Figma</span>
+            <span class="badge badge-secondary">Cpanel</span>
+            <span class="badge badge-secondary">Linux Server</span>
+            <span class="badge badge-secondary">Deployment</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== Projects ===================== -->
+<section id="projects" class="section">
+  <div class="container max-w-6xl">
+    <div class="section-header">
+      <h2 class="text-moonlight text-glow">Some Of My Best Works</h2>
+      <p>A showcase of Real Challenges and learnings.</p>
+    </div>
+
+    <div class="projects-grid">
+
+      <!-- Resume Generator -->
+      <div class="card glass-card project-card">
+        <div class="card-content p-6">
+          <div class="project-emoji wave-animation">
+            <img src="asset/rglogo.png" alt="resume generator logo">
+          </div>
+          <h3>Resume Generator</h3>
+          <ul class="project-list">
+            <li>Built a full-stack resume builder with multiple customizable templates.</li>
+            <li>Implemented Google Login and secure authentication workflows.</li>
+            <li>Developed QR-based resume sharing for instant cross-device access.</li>
+            <li>Generated downloadable PDF resumes with dynamic rendering.</li>
+          </ul>
+          <div class="project-tags">
+            <span class="badge badge-accent">HTML</span>
+            <span class="badge badge-accent">CSS</span>
+            <span class="badge badge-accent">JavaScript</span>
+            <span class="badge badge-accent">jQuery</span>
+            <span class="badge badge-accent">PHP</span>
+            <span class="badge badge-accent">MySQL</span>
+          </div>
+          <div class="project-actions">
+            <a href="https://resumegenerator.42web.io/?i=1" target="_blank" rel="noopener noreferrer">
+              <button class="btn btn-sm btn-primary glass-card btn-block">Live Demo</button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Finnie -->
+      <div class="card glass-card project-card">
+        <div class="card-content p-6">
+          <div class="project-emoji wave-animation" style="animation-delay:1s;">
+            <img src="asset/finnielogo.png" alt="finnie logo">
+          </div>
+          <h3>Finnie</h3>
+          <ul class="project-list">
+            <li>Developed Laravel APIs powering an AI-powered expense tracking application.</li>
+            <li>Implemented OTP authentication for frictionless user onboarding.</li>
+            <li>Built AI-backed parsing to transform inputs like '₹100 on Biryani' into expense records.</li>
+            <li>Enabled automatic categorization and budget management features.</li>
+          </ul>
+          <div class="project-tags">
+            <span class="badge badge-accent">Laravel</span>
+            <span class="badge badge-accent">PHP</span>
+            <span class="badge badge-accent">MySQL</span>
+            <span class="badge badge-accent">REST API</span>
+            <span class="badge badge-accent">Authentication</span>
+          </div>
+          <div class="project-actions">
+            <a href="https://finnieapp.com/" target="_blank" rel="noopener noreferrer">
+              <button class="btn btn-sm btn-primary glass-card btn-block">Live Demo</button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Taza Meat Hub -->
+      <div class="card glass-card project-card">
+        <div class="card-content p-6">
+          <div class="project-emoji wave-animation" style="animation-delay:2s;">
+            <img src="asset/tazameathublogo.png" alt="tazameathub logo">
+          </div>
+          <h3>Taza Meat Hub</h3>
+          <ul class="project-list">
+            <li>Built an on-demand meat delivery platform with Android, IOS, Admin panel</li>
+            <li>Engineered a dynamic mobile home screen, fully configurable by admins in real-time.</li>
+            <li>Enabled drag-and-drop section reordering, reflected instantly without app store releases.</li>
+            <li>Cut UI update turnaround from days to seconds, boosting agility and reducing overhead.</li>
+          </ul>
+          <div class="project-tags">
+            <span class="badge badge-accent">Laravel</span>
+            <span class="badge badge-accent">PHP</span>
+            <span class="badge badge-accent">MySQL</span>
+            <span class="badge badge-accent">REST API</span>
+            <span class="badge badge-accent">Authentication</span>
+            <span class="badge badge-accent">Linux Server Deployement</span>
+          </div>
+          <div class="project-actions">
+            <a href="https://tazameathub.com/" target="_blank" rel="noopener noreferrer">
+              <button class="btn btn-sm btn-primary glass-card btn-block">Live Demo</button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="projects-more">
+      <a href="./all-projects/project-details.html" class="btn btn-lg btn-outline-primary glass-card">View All Projects</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== Contact ===================== -->
+<section id="contact" class="section ocean-gradient">
+  <div class="container max-w-4xl">
+    <div class="section-header">
+      <h2 class="text-moonlight text-glow">Get In Touch</h2>
+      <p>Open to opportunities, collaborations, and conversations.</p>
+    </div>
+
+    <div class="contact-grid">
+      <div class="card glass-card about-card-border-primary float-animation">
+        <div class="card-content p-8">
+          <h3 class="text-primary" style="font-size:1.5rem; font-weight:600; margin:0 0 1.5rem;">Let's Connect</h3>
+
+          <a href="http://linkedin.com/in/sahilshah10/" target="_blank" rel="noopener noreferrer">
+            <div class="contact-link">
+              <div class="contact-icon-circle contact-icon-accent">🌐</div>
+              <div>
+                <p class="contact-name">LinkedIn</p>
+                <p class="contact-sub">Sahil Shah</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://github.com/Sayein" target="_blank" rel="noopener noreferrer">
+            <div class="contact-link">
+              <div class="contact-icon-circle contact-icon-secondary">💻</div>
+              <div>
+                <p class="contact-name">GitHub</p>
+                <p class="contact-sub">Sahil shah</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="card glass-card about-card-border-accent float-animation" style="animation-delay:1s;">
+        <div class="card-content p-8">
+          <h3 class="text-primary" style="font-size:1.5rem; font-weight:600; margin:0 0 1rem;">Availability</h3>
+          <p class="text-muted" style="margin:0; line-height:1.6;">
+            Currently available for freelance projects and full-time opportunities.<br />
+            Response time: Usually within 24 hours.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== Footer ===================== -->
+<footer class="footer">
+  <div class="container max-w-6xl">
+    <div class="footer-inner">
+      <h3 class="text-moonlight text-glow">Sahil.shah</h3>
+      <p>Building Products That Provides Value.</p>
+
+      <div class="footer-socials">
+        <a href="https://github.com/Sayein" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/sahilshah10" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+
+      <div class="footer-bottom">
+        <span>Sahil.shah</span>
+        <div class="footer-bottom-dot"></div>
+        <span>Made with passion and ❤</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
 </html>
